@@ -3,993 +3,619 @@
 @section('content')
 
 @php
-
-$bg = asset('template');
+$bg = asset('template2');
 @endphp
 
-<section class="section home" id="home" style="background-image: url({{$bg}}/images/clh-masterplan.jpg);">
-    <video autoplay muted loop id="myVideo">
-        <source src="{{asset('template')}}/images/Office-69952.mp4" type="video/mp4">
-    </video>
-    <div class="bg-overlay"></div>
-    <div class="container">
-        <div class="row text-center justify-content-center">
-            <div class="col-lg-7">
-                <div class="home-heading">
-                    <h1 class="mb-3 text-white">Rumah dengan fasilitas terlengkap di Tembesi</h1>
+<!-- banner starts -->
+<section class="banner overflow-hidden" id="Home">
+    <div class="slider top50">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-inner">
+                        <div class="slide-image" style="background-image:url({{$bg}}/images/slider/1.jpg)"></div>
+                        <div class="swiper-content">
+                            <div class="entry-meta mb-2">
+                                <span class="entry-category"><a href="listing-leftfilter.html" class="white"> Central Laguna Hills</a></span>
+                            </div>
+                            <h1 class="mb-2 white">Hunian Modern di Lokasi Asri</h1>
+                            <p class="white mb-4">Bangunan tertata rapi dan di lengkapi dengan <strong>Smart Cluster & Smart Community</strong> sehingga memberikan kenyamanan dan keamanan bagi para penghuni</p>
+                            <a href="#" class="nir-btn">Booking Sekarang</a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
                 </div>
-                <p class="text-white-50 fs-20">Explore and learn more about everything from machine learning and global payments to scaling your team.</p>
-                <div class="home-btn hstack gap-2 flex-column d-sm-block">
-                    <button type="button" class="btn btn-white me-1" data-bs-toggle="modal" data-bs-target="#modalForm">Download Brochure</button>
-
-                    <!-- modal -->
-                    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modalFormLabel">Masukan data diri Anda</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" id="recipient-name" placeholder="Masukan nama" autofocus>
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" id="recipient-name" placeholder="Nomor whatsapp">
-                                        </div>
-
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-primary">Download Brochure</button>
-                                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner">
+                        <div class="slide-image" style="background-image:url({{$bg}}/images/slider/2.jpg)"></div>
+                        <div class="swiper-content">
+                            <div class="entry-meta mb-2">
+                                <span class="entry-category"><a href="listing-leftfilter.html" class="white"> Central Laguna Hills</a></span>
+                            </div>
+                            <h1 class="mb-2 white">Pusat bisnis terbesar di tembesi</h1>
+                            <p class="white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <div class="slider-button d-flex justify-content-center">
+                                <a href="#" class="nir-btn">Lihat Brochure</a>
                             </div>
                         </div>
+                        <div class="overlay"></div>
                     </div>
-                    <!-- een modal -->
-
-                    <a class="modal-btn" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target=".watchvideomodal">
-                        <span class="avatar-sm">
-                            <span class="avatar-title rounded-circle btn-icon">
-                                <i class="mdi mdi-play"></i>
-                            </span>
-                        </span>
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade bd-example-modal-lg watchvideomodal" data-keyboard="false" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
-                            <div class="modal-content home-modal p-1">
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <video id="VisaChipCardVideo" class="video-box" controls="">
-                                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                                    <!--Browser does not support <video> tag -->
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END MODAL -->
                 </div>
-            </div><!-- end col-->
-        </div><!-- end row-->
-    </div><!--end container-->
-</section>
-<!-- End Home -->
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="home-shape-arrow">
-            <a href="#features" class="mouse-down"><i class="mdi mdi-arrow-down arrow-icon text-dark h5"></i></a>
+                <div class="swiper-slide">
+                    <div class="slide-inner">
+                        <div class="slide-image" style="background-image:url({{$bg}}/images/slider/3.jpg)"></div>
+                        <div class="swiper-content">
+                            <div class="entry-meta mb-2">
+                                <span class="entry-category"><a href="listing-leftfilter.html" class="white"> Central Laguna Hills</a></span>
+                            </div>
+                            <h1 class="mb-2 white">Perumahan dengan fasilitas terlengkap di Tembesi</h1>
+                            <p class="white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <a href="#" class="nir-btn">Lihat Brochure</a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div><!--end row-->
-</div><!--end container-->
-
-<!-- Start features -->
-<section class="section feature" id="features">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-7">
-                <div class="text-center mb-4">
-                    <h2 class="heading">Why Central Laguna Hills</h2>
-                    <p class="text-muted fs-17">Ut enim ad minima veniam quis nostrum exercitationem ullam
-                        corporis suscipit laboriosam nisi commodi consequatur.</p>
-                </div>
-            </div><!-- end col-->
-        </div><!-- end row-->
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-7 mt-sm-4">
-                <div data-aos="fade-up" data-aos-duration="1800">
-                    <div class="feature-card p-3 py-sm-4 rounded d-flex">
-                        <div class="flex-shrink-0">
-                            <i class="mdi mdi-responsive text-primary float-start me-3 h2"></i>
-                        </div>
-                        <div class="flex-grow-1 ms-2">
-                            <div class="content">
-                                <h5 class="title">Fully Responsive</h5>
-                                <p class="text-muted">One disadvantage of Lorum Ipsum is that in certain letters which is said more than.</p>
-                                <a href="javascipt:void(0)" class="text-dark">Read More <i class="mdi mdi-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-4 col-md-7 mt-sm-4">
-                <div data-aos="fade-up" data-aos-duration="1800">
-                    <div class="feature-card p-3 py-sm-4 rounded">
-                        <i class="mdi mdi-layers-triple-outline text-primary float-start me-3 h2"></i>
-                        <div class="content d-block overflow-hidden">
-                            <h5 class="title">Fresh Layouts</h5>
-                            <p class="text-muted mt-2">The most well-known dummy text is the 'Lorem', which well-known is said which is said.</p>
-                            <a href="javascipt:void(0)" class="text-dark">Read More <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-4 col-md-7 mt-sm-4">
-                <div data-aos="fade-up" data-aos-duration="1800">
-                    <div class="feature-card p-3 py-sm-4 rounded">
-                        <i class="mdi mdi-clipboard-flow-outline text-primary float-start me-3 h2"></i>
-                        <div class="content d-block overflow-hidden">
-                            <h5 class="title">Modern Workflow</h5>
-                            <p class="text-muted mt-2">Moreover, in Latin only words at the beginning of sentences which is said are capitalized.</p>
-                            <a href="javascipt:void(0)" class="text-dark">Read More <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-4 col-md-7 mt-sm-4">
-                <div data-aos="fade-up" data-aos-duration="1800">
-                    <div class="feature-card p-3 py-sm-4 rounded d-flex">
-                        <div class="flex-shrink-0">
-                            <i class="mdi mdi-responsive text-primary float-start me-3 h2"></i>
-                        </div>
-                        <div class="flex-grow-1 ms-2">
-                            <div class="content">
-                                <h5 class="title">Fully Responsive</h5>
-                                <p class="text-muted">One disadvantage of Lorum Ipsum is that in certain letters which is said more than.</p>
-                                <a href="javascipt:void(0)" class="text-dark">Read More <i class="mdi mdi-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-4 col-md-7 mt-sm-4">
-                <div data-aos="fade-up" data-aos-duration="1800">
-                    <div class="feature-card p-3 py-sm-4 rounded">
-                        <i class="mdi mdi-layers-triple-outline text-primary float-start me-3 h2"></i>
-                        <div class="content d-block overflow-hidden">
-                            <h5 class="title">Fresh Layouts</h5>
-                            <p class="text-muted mt-2">The most well-known dummy text is the 'Lorem', which well-known is said which is said.</p>
-                            <a href="javascipt:void(0)" class="text-dark">Read More <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-4 col-md-7 mt-sm-4">
-                <div data-aos="fade-up" data-aos-duration="1800">
-                    <div class="feature-card p-3 py-sm-4 rounded">
-                        <i class="mdi mdi-clipboard-flow-outline text-primary float-start me-3 h2"></i>
-                        <div class="content d-block overflow-hidden">
-                            <h5 class="title">Modern Workflow</h5>
-                            <p class="text-muted mt-2">Moreover, in Latin only words at the beginning of sentences which is said are capitalized.</p>
-                            <a href="javascipt:void(0)" class="text-dark">Read More <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-4 col-md-7 mt-sm-4">
-                <div data-aos="fade-up" data-aos-duration="1800">
-                    <div class="feature-card p-3 py-sm-4 rounded d-flex">
-                        <div class="flex-shrink-0">
-                            <i class="mdi mdi-responsive text-primary float-start me-3 h2"></i>
-                        </div>
-                        <div class="flex-grow-1 ms-2">
-                            <div class="content">
-                                <h5 class="title">Fully Responsive</h5>
-                                <p class="text-muted">One disadvantage of Lorum Ipsum is that in certain letters which is said more than.</p>
-                                <a href="javascipt:void(0)" class="text-dark">Read More <i class="mdi mdi-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-4 col-md-7 mt-sm-4">
-                <div data-aos="fade-up" data-aos-duration="1800">
-                    <div class="feature-card p-3 py-sm-4 rounded">
-                        <i class="mdi mdi-layers-triple-outline text-primary float-start me-3 h2"></i>
-                        <div class="content d-block overflow-hidden">
-                            <h5 class="title">Fresh Layouts</h5>
-                            <p class="text-muted mt-2">The most well-known dummy text is the 'Lorem', which well-known is said which is said.</p>
-                            <a href="javascipt:void(0)" class="text-dark">Read More <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-4 col-md-7 mt-sm-4">
-                <div data-aos="fade-up" data-aos-duration="1800">
-                    <div class="feature-card p-3 py-sm-4 rounded">
-                        <i class="mdi mdi-clipboard-flow-outline text-primary float-start me-3 h2"></i>
-                        <div class="content d-block overflow-hidden">
-                            <h5 class="title">Modern Workflow</h5>
-                            <p class="text-muted mt-2">Moreover, in Latin only words at the beginning of sentences which is said are capitalized.</p>
-                            <a href="javascipt:void(0)" class="text-dark">Read More <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
-        </div><!-- end row -->
-        <div class="row my-sm-5 py-5 align-items-center justify-content-between">
-            <div class="col-lg-6">
-                <div data-aos="fade-right" data-aos-duration="1800">
-                    <div class="card border-0 mb-3 mb-lg-0">
-                        <img src="{{asset('template')}}/images/feature1.jpg" class="img-fluid rounded-3" alt="">
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-5">
-                <div data-aos="fade-left" data-aos-duration="1800">
-                    <h3 class="mb-2">Modern Minimalist Home Design</h3>
-                    <ul class="feature-list">
-                        <li><i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>High Ceiling</li>
-                        <li><i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>Open Layout Concept</li>
-                    </ul>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalForm">Download Brochure</button>
-                </div>
-            </div><!-- end col -->
-        </div><!-- end row -->
-        <div class="row align-items-center justify-content-between">
-            <div class="col-lg-6">
-                <div data-aos="fade-right" data-aos-duration="1800">
-                    <h3 class="feature-heading">We aim to help busy peoples</h3>
-                    <p class="text-muted">Lorem text is also used to demonstrate the appearance of different typefaces and layouts.</p>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <a class="accordion-button" data-bs-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <div>
-                                        <p class="mb-0">Flexible access to facilities.</p>
-                                        <p class="mb-0 fs-13 text-muted">Our new key fobs make it so easy!</p>
-                                    </div>
-                                </a>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p class="fs-14 text-muted mb-1">Lorem text is also used to demonstrate the appearance of different typefaces and layouts, and in general the content of dummy text is nonsensical.</p>
-                                    <a href="javascript:void(0)">
-                                        Check it out <i class="mdi mdi-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <a class="accordion-button collapsed" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <div>
-                                        <p class="mb-0">Snacks, drinks, coffee, and more.</p>
-                                        <p class="mb-0 fs-13 text-muted">Keep your engine going with free food and drinks.</p>
-                                    </div>
-                                </a>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p class="fs-14 text-muted mb-0">Lorem text is also used to demonstrate the appearance of different typefaces and layouts, and in general the content of dummy text is nonsensical.</p>
-                                    <a href="javascript:void(0)" class="fs-14 text-decoration-none">
-                                        Check it out <i class="mdi mdi-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <a class="accordion-button collapsed" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <div>
-                                        <p class="mb-0">On site tech support</p>
-                                        <p class="mb-0 fs-13 text-muted">Connectivity, power, and IT issues solved in no time.</p>
-                                    </div>
-                                </a>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p class="fs-14 text-muted mb-0">Lorem text is also used to demonstrate the appearance of different typefaces and layouts, and in general the content of dummy text is nonsensical.</p>
-                                    <a href="javascript:void(0)" class="fs-14 text-decoration-none">
-                                        Check it out <i class="mdi mdi-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-6">
-                <div data-aos="fade-left" data-aos-duration="1800">
-                    <div class="card bg-transparent border-0">
-                        <img src="{{asset('template')}}/images/feature2.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div><!-- end col -->
-        </div>
-    </div><!-- end container -->
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 </section>
-<!-- end Features -->
+<!-- banner ends -->
 
-<!-- Start cta -->
-<section class="section cta" style="background-image: url({{$bg}}/images/cta.jpg) fixed no-repeat;">
+
+
+<section class="about-us pb-5 pt-10" id="Tentang">
     <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-lg-6">
-                <div data-aos="fade-down" data-aos-duration="1800">
-                    <h3 class="fw-bold">Stay Connected</h3>
-                    <p>Now that we've aligned the details, it's time to get things mapped out and organized. Now that we've aligned the details.</p>
-                    <a class="btn btn-primary" href="javascript:void(0)">Learn More</a>
+        <div class="about-image-box">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-lg-6 col-sm-12 mb-4">
+                    <div class="about-content">
+                        <h4 class="bg-theme white px-4 py-1 d-inline-block">Tentang Kami</h4>
+                        <h2 class="border-b mb-2 pb-2 ">Live Your Dream at Central Laguna Hills</h2>
+                        <p class="mb-0"><strong>Central Laguna Hills</strong> merupakan hunian yang paling prestisius dikelasnya dan dipersembahkan oleh Developer terbesar & terpercaya yaitu <strong>Central Group</strong><br><br>sebuah kawasan dengan <strong>desain modern, asri, dan tata ruang yang rapi</strong> memberikan estetika yang nyaman untuk hunian dan usaha. serta dilengkapi dengan fasilitas lengkap yang akan menjadi perumahan pertama dengan taman wisata.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 mb-4">
+                    <div class="about-image p-3 box-shadow">
+                        <img src="{{$bg}}/images/trending/trending5.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="about-us bg-white pb-6 pt-0" id="WhyUs">
+    <div class="container">
+
+        <div class="section-title mb-6 pb-1 w-75 mx-auto text-center">
+            <h2 class="m-0">Mengapa <span>Pilih</span> Kami?</h2>
+            <p>Central Laguna Hills dibangun oleh Developer Terbesar & Terpercaya di Batam</p>
+        </div>
+
+        <!-- why us starts -->
+        <div class="why-us">
+            <div class="why-us-box">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="why-us-item text-center bg-lgrey">
+                            <div class="why-us-icon">
+                                <i class="flaticon-location-pin theme"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h4><a href="#">Lokasi Strategis</a></h4>
+                                <p class="mb-0"><strong>Central Laguna Hills</strong> berada di lokasi yang dikelilingi oleh fasilitas pendidikan, area perbelanjaan dan area rekreasi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="why-us-item text-center bg-lgrey">
+                            <div class="why-us-icon">
+                                <i class="fa fa-road theme"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h4><a href="#">Akses Mudah</a></h4>
+                                <p class="mb-0"><strong>Central Laguna Hills</strong> terletak di depan jalan raya utama dan mudah dijangkau dan terlihat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="why-us-item text-center bg-lgrey">
+                            <div class="why-us-icon">
+                                <i class="fa fa-tree theme"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h4><a href="#">Fasilitas Lengkap</a></h4>
+                                <p class="mb-0">Terdapat 11 faslitaas umum yang dapat digunakan oleh penghuni <strong>Central Laguna Hills</strong> bersama orang-orang tersayang</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="why-us-item text-center bg-lgrey">
+                            <div class="why-us-icon">
+                                <i class="fa fa-building theme"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h4><a href="#">Kualitas Bangunan</a></h4>
+                                <p class="mb-0"><strong>Central Laguna Hills</strong> memberikan standar kualitas bangunan yang baik untuk kenyamanan para penghuni</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="why-us-item text-center bg-lgrey">
+                            <div class="why-us-icon">
+                                <i class="fa fa-users theme"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h4><a href="#">Estate Management</a></h4>
+                                <p class="mb-0">Kawasan tertata rapi yang dikelola oleh Estate Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="why-us-item text-center bg-lgrey">
+                            <div class="why-us-icon">
+                                <i class="fa fa-feed theme"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h4><a href="#">Sistem Cluster</a></h4>
+                                <p class="mb-0">menerapkan sistem cluster dengan <strong>One Gate System</strong> & didukung dengan <strong>Smart Cluster</strong> sehingga memberikan kenyamanan dan kemanan penuh kepada para penghuni karena dapat memantau CCTV cluster hanya dengan Smartphone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="why-us-item text-center bg-lgrey">
+                            <div class="why-us-icon">
+                                <i class="fa fa-home theme"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h4><a href="#">Konsep Desain</a></h4>
+                                <p class="mb-0">Mengusung konsep desain rumah <strong>Modern Minimalist</strong> sehingga memberikan banyak benefit, selain ruangannya jadi fungsional dan meminimalisir biaya perawatan pada rumah selain itu juga memiliki sisa luas tanah yang luas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="why-us-item text-center bg-lgrey">
+                            <div class="why-us-icon">
+                                <i class="fa fa-leaf theme"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h4><a href="#">Growing House Cocept</a></h4>
+                                <p class="mb-0">Rumah memiliki spacious backyard untuk kebutuhan pengembangan bangunan atau digunakan untuk kebutuhan oleh masing-masing penghuni</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trend-btn text-center"><a href="#" class="nir-btn">Booking Sekarang</a></div>
+        </div>
+        <!-- why us ends -->
+    </div>
+</section>
+
+
+
+<section class="trending bg-grey pt-9" id="Property">
+    <div class="container">
+        <div class="section-title mb-6 pb-1 w-75 mx-auto text-center">
+            <h2 class="m-0">Tipe <span>Bangunan</span> kami</h2>
+            <p>Central Laguna hills</p>
+        </div>
+        <div class="trend-box">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <div class="trend-item box-shadow rounded">
+                        <div class="trend-image">
+                            <img src="{{$bg}}/images/trending/trending1.jpg" alt="image">
+                            <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+
+                        </div>
+                        <div class="trend-content p-4 bg-white">
+                            <h5 class="theme">Rumah</h5>
+                            <h4>Type 32</h4>
+                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                <div class="entry-author">
+                                    <p>Mulai dari<small class="d-block theme fw-bold">Rp. 200 Jt-an</small></p>
+                                </div>
+                                <div class="entry-metalist d-flex align-items-center">
+                                    <a href="" class="nir-btn">Selengkapnya</a>
+                                </div>
+                            </div>
+                            <p class="mb-0">memiliki luas dengan 12x5 meter persegi dengan sisa lahan belakang dan depan</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <div class="trend-item box-shadow rounded">
+                        <div class="trend-image">
+                            <img src="{{$bg}}/images/trending/trending2.jpg" alt="image">
+                            <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+
+                        </div>
+                        <div class="trend-content p-4 bg-white">
+                            <h5 class="theme">Rumah</h5>
+                            <h4>Type 36</h4>
+                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                <div class="entry-author">
+                                    <p>Mulai dari<small class="d-block theme fw-bold">Rp. 300 Jt-an</small></p>
+                                </div>
+                                <div class="entry-metalist d-flex align-items-center">
+                                    <a href="" class="nir-btn">Selengkapnya</a>
+                                </div>
+                            </div>
+                            <p class="mb-0">memiliki luas dengan 12x5 meter persegi dengan sisa lahan belakang dan depan</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <div class="trend-item box-shadow rounded">
+                        <div class="trend-image">
+                            <img src="{{$bg}}/images/trending/trending3.jpg" alt="image">
+                            <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+
+                        </div>
+                        <div class="trend-content p-4 bg-white">
+                            <h5 class="theme">Rumah</h5>
+                            <h4>Type 45</h4>
+                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                <div class="entry-author">
+                                    <p>Mulai dari<small class="d-block theme fw-bold">Rp. 400 Jt-an</small></p>
+                                </div>
+                                <div class="entry-metalist d-flex align-items-center">
+                                    <a href="" class="nir-btn">Selengkapnya</a>
+                                </div>
+                            </div>
+                            <p class="mb-0">memiliki luas dengan 12x5 meter persegi dengan sisa lahan belakang dan depan</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="about-us about-us1 pb-6" style="background-image: url({{$bg}}/images/bg/bg2.jpg)">
+    <div class="container">
+        <div class="about-image-box">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-lg-6 col-sm-12 mb-4">
+                    <div class="about-content">
+                        <h4 class="bg-theme white px-4 py-1 d-inline-block">Sejarah kami</h4>
+                        <h2 class="border-b mb-2 pb-2">Making living spaces More Beautiful at Central Laguna hills</h2>
+                        <p class="mb-0"><strong>Central Laguna hills</strong> merupakan project dari Central group yang mulai dikembangkan pada tahun 2018 hingga saat ini sudah terjual lebih dari setengah luas kawasan</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="video-button text-center">
+                        <div class="call-button text-center position-relative">
+                            <button type="button" class="play-btn">
+                                <i class="fa fa-play bg-blue"></i>
+                            </button>
+                        </div>
+                        <div class="video-figure"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+
+<section class="trending recent-articles pb-4 border-t pt-9" id="Promo">
+    <div class="container">
+        <div class="section-title mb-4 pb-1 w-75 mx-auto text-center">
+            <h2 class="m-0">Klaim <span>Promo Spesial</span> Khusus hari ini!</h2>
+            <p>Promo hanya dapat di kalim melalu website ini</p>
+        </div>
+        <div class="recent-articles-inner">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="trend-item box-shadow bg-white p-4 mb-2">
+                        <div class="trend-image">
+                            <img src="images/trending/trending10.jpg" alt="image">
+                        </div>
+                        <div class="trend-content-main pt-3">
+                            <div class="trend-content">
+                                <h5 class="theme">Technology</h5>
+                                <h4><a href="detail-1.html">How a developer and designer duo at Deutsche Bank keep remote alive.</a></h4>
+                                <p class="mb-3">
+                                    A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.
+                                </p>
+                                <div class="entry-meta d-flex align-items-center justify-content-between">
+                                    <div class="entry-author">
+                                        <img src="images/reviewer/2.jpg" alt="" class="rounded-circle me-1">
+                                        <span>Sollmond Nell</span>
+                                    </div>
+                                    <div class="entry-metalist d-flex align-items-center">
+                                        <ul>
+                                            <li class="me-2"><i class="fa fa-eye"></i> 5k</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 5k</li>
+                                            <li><i class="fa fa-comments"></i> 5k</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="trend-item box-shadow bg-white p-4 mb-2">
+                        <div class="trend-image">
+                            <img src="images/trending/trending12.jpg" alt="image">
+                        </div>
+                        <div class="trend-content-main pt-3">
+                            <div class="trend-content">
+                                <h5 class="theme">Inspiration</h5>
+                                <h4><a href="detail-1.html">Inspire Runner with Autism Graces the Latest Cover of Women's Running</a></h4>
+                                <p class="mb-3">
+                                    A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.
+                                </p>
+                                <div class="entry-meta d-flex align-items-center justify-content-between">
+                                    <div class="entry-author">
+                                        <img src="images/reviewer/1.jpg" alt="" class="rounded-circle me-1">
+                                        <span>David Scott</span>
+                                    </div>
+                                    <div class="entry-metalist d-flex align-items-center">
+                                        <ul>
+                                            <li class="me-2"><i class="fa fa-eye"></i> 5k</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 5k</li>
+                                            <li><i class="fa fa-comments"></i> 5k</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="trend-item box-shadow bg-white p-4 mb-2">
+                        <div class="trend-image">
+                            <img src="images/trending/trending13.jpg" alt="image">
+                        </div>
+                        <div class="trend-content-main pt-3">
+                            <div class="trend-content">
+                                <h5 class="theme">Public</h5>
+                                <h4><a href="detail-1.html">We Provide Services To Grow Your Business more Sell Affiliate Products</a></h4>
+                                <p class="mb-3">
+                                    A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.
+                                </p>
+                                <div class="entry-meta d-flex align-items-center justify-content-between">
+                                    <div class="entry-author">
+                                        <img src="images/reviewer/3.jpg" alt="" class="rounded-circle me-1">
+                                        <span>John Bolden</span>
+                                    </div>
+                                    <div class="entry-metalist d-flex align-items-center">
+                                        <ul>
+                                            <li class="me-2"><i class="fa fa-eye"></i> 5k</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 5k</li>
+                                            <li><i class="fa fa-comments"></i> 5k</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End cta -->
 
-<!-- Start Reviews -->
-<section class="section reviews" id="review">
+<!-- Discount action starts -->
+<section class="discount-action discount-action1 pb-0 pt-0">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-7">
-                <div class="text-center mb-5">
-                    <h2 class="heading">What they say about us honest reviews</h2>
-                    <p class="text-muted fs-17">Vivamus ac nulla ultrices laoreet neque mollis mi morbi elementum mauris sit amet arcu
-                        fringilla auctor In eleifend maximus nisi sed vulputate.</p>
-                </div>
-            </div><!-- end col-->
-            <div class="col-lg-8">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators mb-0">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item">
-                            <div class="card bg-transparent reviews-box h-100">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="card reviews-card">
-                                                <div class="card-body text-center">
-                                                    <img class="img-fluid" src="{{asset('template')}}/images/user/user1.png" alt="">
-                                                    <div class="mt-3">
-                                                        <h6 class="mb-0">Brandon Carney</h6>
-                                                        <p class="text-muted mb-0 fs-14">Vice president</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <h5 class="reviews-heading">Client Reviews</h5>
-                                            <div class="d-flex align-items-top">
-                                                <div class="flex-shrink-0">
-                                                    <img class="reviews-quote-1" src="{{asset('template')}}/images/quote.png" alt="">
-                                                </div>
-                                                <div class="flex-grow-1 ms-2 mt-2">
-                                                    <p class="text-muted fs-14 mt-xl-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                                                        eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item active">
-                            <div class="card bg-transparent reviews-box h-100">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="card reviews-card">
-                                                <div class="card-body text-center">
-                                                    <img class="img-fluid" src="{{asset('template')}}/images/user/user2.png" alt="">
-                                                    <div class="mt-3">
-                                                        <h6 class="mb-0">Brandon Carney</h6>
-                                                        <p class="text-muted mb-0 fs-14">Vice president</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <h5 class="reviews-heading">Client Reviews</h5>
-                                            <div class="d-flex align-items-top">
-                                                <div class="flex-shrink-0">
-                                                    <img class="reviews-quote-1" src="{{asset('template')}}/images/quote.png" alt="">
-                                                </div>
-                                                <div class="flex-grow-1 ms-2 mt-2">
-                                                    <p class="text-muted fs-14 mt-xl-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                                                        eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="card bg-transparent reviews-box h-100">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="card reviews-card">
-                                                <div class="card-body text-center">
-                                                    <img class="img-fluid" src="{{asset('template')}}/images/user/user.png" alt="">
-                                                    <div class="mt-3">
-                                                        <h6 class="mb-0">Brandon Carney</h6>
-                                                        <p class="text-muted mb-0 fs-14">Vice president</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <h5 class="reviews-heading">Client Reviews</h5>
-                                            <div class="d-flex align-items-top">
-                                                <div class="flex-shrink-0">
-                                                    <img class="reviews-quote-1" src="{{asset('template')}}/images/quote.png" alt="">
-                                                </div>
-                                                <div class="flex-grow-1 ms-2 mt-2">
-                                                    <p class="text-muted fs-14 mt-xl-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                                                        eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+        <div class="call-banner" style="background-image: url({{$bg}}/images/bg/bg2.jpg);">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6 col-md-8 p-0">
+                    <div class="call-banner-inner bg-theme1">
+                        <div class="trend-content-main">
+                            <div class="trend-content p-5">
+                                <h5 class="mb-1 white">Wanna to Sell Or Rent??</h5>
+                                <h2 class="mb-4 white">Looking to Buy a New Property or Sell an Existing One?</h2>
+                                <div class="section-btns d-flex align-items-center">
+                                    <a href="grid-leftfilter.html" class="nir-btn me-4">Rent Properties <i class="fa fa-arrow-right white pl-1"></i></a>
+                                    <a href="grid-rightfilter.html" class="nir-btn">Buy Properties <i class="fa fa-arrow-right white pl-1"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div><!-- end col-->
-        </div><!-- End row-->
-    </div><!-- end container-->
+                <div class="col-lg-6 col-md-4 p-0"></div>
+            </div>
+        </div>
+        <div class="partner-wrapper bg-lgrey p-4">
+            <ul class="attract-slider">
+                <li class="px-3"><img src="images/cl-1.png" alt=""></li>
+                <li class="px-3"><img src="images/cl-2.png" alt=""></li>
+                <li class="px-3"><img src="images/cl-3.png" alt=""></li>
+                <li class="px-3"><img src="images/cl-4.png" alt=""></li>
+                <li class="px-3"><img src="images/cl-5.png" alt=""></li>
+                <li class="px-3"><img src="images/cl-3.png" alt=""></li>
+                <li class="px-3"><img src="images/cl-4.png" alt=""></li>
+                <li class="px-3"><img src="images/cl-5.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
 </section>
-<!-- End Reviews -->
+<!-- Discount action Ends -->
 
-<!-- START pricing -->
-<section class="section pricing" id="pricing">
-    <div class="bg-shape"></div>
+<!-- our teams starts -->
+<section class="our-team pb-6 pt-19">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-7">
-                <div class="text-center mb-5">
-                    <h2 class="heading">Pricing</h2>
-                    <p class="text-muted fs-17">Donec nec nibh vestibulum, fringilla ante nec, convallis turpis.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus tristique nibh.</p>
-                </div>
-            </div><!-- end col-->
-        </div><!-- End row -->
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div data-aos="fade-right" data-aos-duration="1800">
-                    <div class="card pricing-box mx-1 mt-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h6>Standard</h6>
-                                <h1 class="mb-0 pt-2 fw-bold">$10 <sub class="fs-14 fw-normal">/-Monthly</sub></h1>
-                            </div>
+        <div class="section-title mb-6 pb-1 w-75 text-center mx-auto">
+            <h2 class="m-0">Meet Our <span>Excellent Agents</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="team-main">
+            <div class="row shop-slider">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="team-list">
+                        <div class="team-image">
+                            <img src="images/team/img1.jpg" alt="team">
                         </div>
-                        <div class="p-4">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shring-0">
-                                            <div class="avatar-xs">
-                                                <div class="avatar-title rounded-circle bg-soft-primary">
-                                                    <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <p class="mb-0 fs-14">150+ Templets</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shring-0">
-                                            <div class="avatar-xs">
-                                                <div class="avatar-title rounded-circle bg-soft-primary">
-                                                    <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <p class="mb-0 fs-14">250+ Icons</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shring-0">
-                                            <div class="avatar-xs">
-                                                <div class="avatar-title rounded-circle bg-soft-primary">
-                                                    <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <p class="mb-0 fs-14">Build Tools</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shring-0">
-                                            <div class="avatar-xs">
-                                                <div class="avatar-title rounded-circle bg-soft-primary">
-                                                    <i class="mdi mdi-close-circle-outline text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <p class="mb-0 fs-14">Free Update</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shring-0">
-                                            <div class="avatar-xs">
-                                                <div class="avatar-title rounded-circle bg-soft-primary">
-                                                    <i class="mdi mdi-close-circle-outline text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <p class="mb-0 fs-14">Source Files</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="d-grid">
-                                <a href="javascript:void(0)" class="btn btn-outline-primary">Choose Plan</a>
-                            </div>
-                        </div>
-                    </div><!-- End card -->
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card pricing-box mx-1 mt-4 active">
-                    <span class="pricing-lable">populer</span>
-                    <div class="card">
-                        <div class="card-body">
-                            <h6>Premium</h6>
-                            <h1 class="mb-0 pt-2 fw-bold">$30 <sub class="fs-14 fw-normal">/-Monthly</sub></h1>
+                        <div class="team-content text-center p-3 bg-white">
+                            <h4 class="mb-0">Salmon Thuir</h4>
+                            <p class="mb-0">Senior Agent</p>
                         </div>
                     </div>
-                    <div class="p-4">
-                        <ul class="list-unstyled">
-                            <li>
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shring-0">
-                                        <div class="avatar-xs">
-                                            <div class="avatar-title rounded-circle bg-soft-primary">
-                                                <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-2">
-                                        <p class="mb-0 fs-14">290+ Templets</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shring-0">
-                                        <div class="avatar-xs">
-                                            <div class="avatar-title rounded-circle bg-soft-primary">
-                                                <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-2">
-                                        <p class="mb-0 fs-14">400+ Icons</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shring-0">
-                                        <div class="avatar-xs">
-                                            <div class="avatar-title rounded-circle bg-soft-primary">
-                                                <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-2">
-                                        <p class="mb-0 fs-14">Build Tools</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shring-0">
-                                        <div class="avatar-xs">
-                                            <div class="avatar-title rounded-circle bg-soft-primary">
-                                                <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-2">
-                                        <p class="mb-0 fs-14">Free Update</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shring-0">
-                                        <div class="avatar-xs">
-                                            <div class="avatar-title rounded-circle bg-soft-primary">
-                                                <i class="mdi mdi-close-circle-outline text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-2">
-                                        <p class="mb-0 fs-14">Source Files</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="d-grid">
-                            <a href="javascript:void(0)" class="btn btn-outline-primary active">Choose Plan</a>
-                        </div>
-                    </div>
-                </div><!-- End card -->
-            </div><!-- col end -->
-            <div class="col-lg-4 col-md-6">
-                <div data-aos="fade-left" data-aos-duration="1800">
-                    <div class="card pricing-box mx-1 mt-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h6>Enterprise</h6>
-                                <h1 class="mb-0 pt-2 fw-bold">$39 <sub class="fs-14 fw-normal">/-Monthly</sub></h1>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shring-0">
-                                            <div class="avatar-xs">
-                                                <div class="avatar-title rounded-circle bg-soft-primary">
-                                                    <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <p class="mb-0 fs-14">350+ Templets</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shring-0">
-                                            <div class="avatar-xs">
-                                                <div class="avatar-title rounded-circle bg-soft-primary">
-                                                    <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <p class="mb-0 fs-14">999+ Icons</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shring-0">
-                                            <div class="avatar-xs">
-                                                <div class="avatar-title rounded-circle bg-soft-primary">
-                                                    <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <p class="mb-0 fs-14">Build Tools</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shring-0">
-                                            <div class="avatar-xs">
-                                                <div class="avatar-title rounded-circle bg-soft-primary">
-                                                    <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <p class="mb-0 fs-14">Free Update</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shring-0">
-                                            <div class="avatar-xs">
-                                                <div class="avatar-title rounded-circle bg-soft-primary">
-                                                    <i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <p class="mb-0 fs-14">Source Files</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="d-grid">
-                                <a href="javascript:void(0)" class="btn btn-outline-primary">Choose Plan</a>
-                            </div>
-                        </div>
-                    </div><!-- End card -->
                 </div>
-            </div><!-- col end -->
-        </div><!-- End row -->
-    </div><!-- End container -->
-</section>
-<!-- END pricing -->
 
-<!-- Start cta -->
-<section class="section cta">
-    <marquee behavior="" direction="left">
-        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-    </marquee>
-    <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-lg-6">
-                <div data-aos="fade-down" data-aos-duration="1800">
-                    <div class="cta-heading">Today Offer <span class="mb-3">
-                            <span class="counter_value" data-target="37">0</span>
-                            <span>% Off</span>
-                        </span>!
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="team-list">
+                        <div class="team-image">
+                            <img src="images/team/img2.jpg" alt="team">
+                        </div>
+                        <div class="team-content text-center p-3 bg-white">
+                            <h4 class="mb-0">Horke Pels</h4>
+                            <p class="mb-0">Head Officer</p>
+                        </div>
                     </div>
-                    <p>Now that we've aligned the details, it's time to get things mapped out and organized. Now that we've aligned the details.</p>
-                    <!-- <p class="fs-18">Limited signup only. Order today before the discount period end.</p> -->
-                    <a class="btn btn-primary" href="javascript:void(0)">Learn More</a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="team-list">
+                        <div class="team-image">
+                            <img src="images/team/img4.jpg" alt="team">
+                        </div>
+                        <div class="team-content text-center p-3 bg-white">
+                            <h4 class="mb-0">Solden kalos</h4>
+                            <p class="mb-0">Supervisor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="team-list">
+                        <div class="team-image">
+                            <img src="images/team/img3.jpg" alt="team">
+                        </div>
+                        <div class="team-content text-center p-3 bg-white">
+                            <h4 class="mb-0">Nelson Bam</h4>
+                            <p class="mb-0">Quality Assurance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="team-list">
+                        <div class="team-image">
+                            <img src="images/team/img5.jpg" alt="team">
+                        </div>
+                        <div class="team-content text-center bg-white p-3">
+                            <h4 class="mb-0">Cacics Coold</h4>
+                            <p class="mb-0">Asst. Chef</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End cta -->
+<!-- our teams Ends -->
 
-<!-- Start Team -->
-<section class="section team" style="z-index: 1;">
-    <div id="particles-js" style="z-index: -1;">
-    </div>
-    <!-- end particles -->
+<!-- testomonial start -->
+<section class="testimonial pb-6 pt-9" style="background-image:url(images/testimonial.png)">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-7">
-                <div class="text-center mb-5">
-                    <h2 class="heading">Team</h2>
-                    <p class="text-muted fs-17">Build responsive, mobile-first projects on the web
-                        with the world's most popular front-end component library.</p>
-                </div>
-            </div><!-- end col-->
-        </div><!-- end row -->
-        <div class="row gy-4">
-            <div class="col-lg-3 col-sm-6">
-                <div class="team-card">
-                    <div class="team-card-img">
-                        <img class="img-fluid" src="{{asset('template')}}/images/user/user.png" alt="image">
-                        <div class="team-social-icons">
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
+        <div class="section-title mb-4 pb-1 w-75 mx-auto text-center">
+            <h2 class="m-0">Good Reviews By <span>Clients</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="row review-slider1">
+            <div class="col-sm-4 item">
+                <div class="testimonial-item1 text-center">
+                    <div class="details">
+                        <p class="m-0">Lorem Ipsum is simply dummy text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum has been the industry's standard dummy hic et quidem. Dignissimos maxime velit unde inventore quasi vero dolorem.</p>
+                    </div>
+                    <div class="author-info mt-2">
+                        <a href="#"><img src="images/testimonial/img1.jpg" alt=""></a>
+                        <div class="author-title">
+                            <h4 class="m-0 theme2">Jared Erondu</h4>
+                            <span>Supervisor</span>
                         </div>
                     </div>
-                    <div class="team-card-text-2">
-                        <h5 class="fw-bold mb-0">Bao Pan</h5>
-                        <p class="mb-0 fs-13 text-muted">Back End Developer</p>
-                    </div>
-                </div>
-            </div><!-- end col -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="team-card">
-                    <div class="team-card-img">
-                        <img class="img-fluid" src="{{asset('template')}}/images/user/user1.png" alt="image">
-                        <div class="team-social-icons">
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-card-text-2">
-                        <h5 class="fw-bold mb-0">Ines Durr</h5>
-                        <p class="mb-0 fs-13 text-muted">Front End Developer</p>
-                    </div>
-                </div>
-            </div><!-- End col -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="team-card">
-                    <div class="team-card-img">
-                        <img class="img-fluid" src="{{asset('template')}}/images/user/user2.png" alt="image">
-                        <div class="team-social-icons">
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-card-text-2">
-                        <h5 class="fw-bold mb-0">Stephan Vogt</h5>
-                        <p class="mb-0 fs-13 text-muted">Bid Manager</p>
-                    </div>
-                </div>
-            </div><!-- End col -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="team-card">
-                    <div class="team-card-img">
-                        <img class="img-fluid" src="{{asset('template')}}/images/user/user3.png" alt="image">
-                        <div class="team-social-icons">
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)" target="">
-                                        <i class="mdi mdi-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-card-text-2">
-                        <h5 class="fw-bold mb-0">Cong Chia</h5>
-                        <p class="mb-0 fs-13 text-muted">Team Lead</p>
-                    </div>
-                </div>
-            </div> <!-- End col-->
-        </div><!-- end row-->
-    </div><!-- end cotainer-->
-</section>
-<!-- End Team -->
-
-<!-- Start contact -->
-<section class="section contact" id="contact">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <h2 class="heading">Contact Us</h2>
-                    <p class="text-muted mt-2 fs-17">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div><!-- end col -->
-        </div><!-- end row -->
-        <div class="row align-items-center gy-3">
-            <div class="col-lg-6">
-                <div data-aos="fade-right" data-aos-duration="1800">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569" width="100%" height="325" style="border: 0" allowfullscreen></iframe> </div>
-                        </div>
-                    </div>
+                    <i class="fa fa-quote-left mb-2"></i>
                 </div>
             </div>
-            <!--end col-->
-            <div class="col-lg-6">
-                <div data-aos="fade-left" data-aos-duration="1800">
-                    <form method="post" onsubmit="return validateForm()" class="contact-form" name="myForm" id="myForm">
-                        <span id="error-msg"></span>
-                        <div class="row rounded-3 py-3">
-                            <div class="col-lg-12">
-                                <div class="position-relative mb-3">
-                                    <span class="input-group-text"><i class="mdi mdi-account-outline"></i></span>
-                                    <input name="name" id="name" type="text" class="form-control" placeholder="Enter your name*">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="position-relative mb-3">
-                                    <span class="input-group-text"><i class="mdi mdi-email-outline"></i></span>
-                                    <input name="email" id="email" type="email" class="form-control" placeholder="Enter your email*">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="position-relative mb-3">
-                                    <span class="input-group-text"><i class="mdi mdi-file-document-outline"></i></span>
-                                    <input name="subject" id="subject" type="text" class="form-control" placeholder="Subject">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="position-relative mb-3">
-                                    <span class="input-group-text align-items-start"><i class="mdi mdi-comment-text-outline"></i></span>
-                                    <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Enter your message*"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="text-end">
-                                    <input type="submit" id="submit" name="send" class="btn btn-primary" value="Send Message">
-                                </div>
-                            </div>
+            <div class="col-sm-4 item">
+                <div class="testimonial-item1 text-center">
+                    <div class="details">
+                        <p class="m-0">Lorem Ipsum is simply dummy text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum has been the industry's standard dummy hic et quidem. Dignissimos maxime velit unde inventore quasi vero dolorem.</p>
+                    </div>
+                    <div class="author-info mt-2">
+                        <a href="#"><img src="images/testimonial/img2.jpg" alt=""></a>
+                        <div class="author-title">
+                            <h4 class="m-0 theme2">Cadic Vegeta</h4>
+                            <span>Sr. Consultant</span>
                         </div>
-                    </form>
-                    <!--end form-->
+                    </div>
+                    <i class="fa fa-quote-left mb-2"></i>
                 </div>
-            </div><!--end col-->
-        </div><!--end row-->
-    </div><!--end container-->
+            </div>
+            <div class="col-sm-4 item">
+                <div class="testimonial-item1 text-center">
+                    <div class="details">
+                        <p class="m-0">Lorem Ipsum is simply dummy text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum has been the industry's standard dummy hic et quidem. Dignissimos maxime velit unde inventore quasi vero dolorem.</p>
+                    </div>
+                    <div class="author-info mt-2">
+                        <a href="#"><img src="images/testimonial/img3.jpg" alt=""></a>
+                        <div class="author-title">
+                            <h4 class="m-0 theme2">Jonathan Beri</h4>
+                            <span>Sales Manager</span>
+                        </div>
+                    </div>
+                    <i class="fa fa-quote-left mb-2"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<!-- End contect -->
+<!-- testimonial ends -->
+
+
+
+
+
+<!-- content-line start -->
+<div class="content-line mt-0">
+    <div class="content-line-inner bg-theme2 pb-6 pt-6 p-5">
+        <div class="container">
+            <div class="row d-md-flex align-items-center justify-content-between text-lg-start text-center">
+                <div class="col-lg-9">
+                    <h2 class="mb-0 white">
+                        Looking for a dream home?
+                    </h2>
+                    <p class="white">We can help you realize your dream of a new home</p>
+                </div>
+                <div class="col-lg-3">
+                    <a href="listing-leftfilter.html" class="nir-btn-black float-none float-lg-end">Fine More Properties</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- content-line ends -->
 
 @endsection

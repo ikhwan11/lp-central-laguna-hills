@@ -1,222 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Oxhen - Responsive HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap v5.1.3 Landing Page Template" />
-    <meta name="keywords" content="bootstrap v5.1.3, premium, marketing, multipurpose" />
-    <meta content="Themesdesign" name="author" />
 
-    <!-- fevicon -->
-    <link rel="shortcut icon" href="{{asset('template')}}/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="{{asset('template')}}/css/bootstrap.min.css" type="text/css" />
+    <title>Central Laguna Hills</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{asset('template2')}}/images/logo.png">
+    <!-- Bootstrap core CSS -->
+    <link href="{{asset('template2')}}/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--Custom CSS-->
+    <link href="{{asset('template2')}}/css/style.css" rel="stylesheet" type="text/css">
+    <!--Plugin CSS-->
+    <link href="{{asset('template2')}}/css/plugin.css" rel="stylesheet" type="text/css">
+    <!--Flaticons CSS-->
+    <link href="{{asset('template2')}}/fonts/flaticon.css" rel="stylesheet" type="text/css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-    <!-- animation -->
-    <link rel="stylesheet" href="{{asset('template')}}/css/aos.css" />
-
-    <!-- slider -->
-    <link rel="stylesheet" href="{{asset('template')}}/css/swiper-bundle.min.css" />
-
-    <!-- Icon -->
-    <link rel="stylesheet" href="{{asset('template')}}/css/materialdesignicons.min.css" type="text/css" />
-
-    <!-- css -->
-    <link rel="stylesheet" href="{{asset('template')}}/css/style.min.css" type="text/css" />
-
-
+    <link rel="stylesheet" href="{{asset('template2')}}/fonts/line-icons.css" type="text/css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
+<body>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-white navbar-custom sticky" id="navbar">
-        <div class="container">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <!-- Preloader Ends -->
 
-            <!-- LOGO -->
-            <a class="navbar-brand text-uppercase" href="index-1.html">
-                <img class="logo-light" src="{{asset('template')}}/images/logo-light.png" alt="" height="50">
-                <img class="logo-dark" src="{{asset('template')}}/images/logo-dark.png" alt="" height="50">
-            </a>
+    <!-- header starts -->
+    <header class="main_header_area">
+        <!-- Navigation Bar -->
+        <div class="header_menu" id="header_menu">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-flex d-flex align-items-center justify-content-between w-100 pb-3 pt-3">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="{{asset('template2')}}/images/logo.png" width="150" alt="image">
+                            </a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="navbar-collapse1 d-flex align-items-center" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav" id="responsive-menu">
+                                <li><a class="nav-link" href="#Home">Home</a></li>
+                                <li><a class="nav-link" href="#Tentang">Tentang</a></li>
+                                <li><a class="nav-link" href="#WhyUs">Mengapa Kami</a></li>
+                                <li><a class="nav-link" href="#Property">Properti Kami</a></li>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="mdi mdi-menu"></span>
-            </button>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                        <div class="register-login d-flex align-items-center">
+                            <a href="#" class="nir-btn white">Booking Sekarang</a>
+                        </div>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mx-auto" id="navbar-navlist">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Why Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#review">Review</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mb-3 mb-lg-0" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary nav-btn" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
-                    Sign Up
-                </button>
+                        <div id="slicknav-mobile"></div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        <!-- Navigation Bar Ends -->
+    </header>
+    <!-- header ends -->
+
+    @yield('content')
+
+    <!-- footer starts -->
+    <footer class="pt-10 footermain">
+        <div class="footer-copyright pt-2 pb-2">
+            <div class="container">
+                <div class="copyright-inner d-md-flex align-items-center justify-content-between">
+                    <div class="copyright-text">
+                        <p class="m-0 white">2022 Realshield. All rights reserved.</p>
+                    </div>
+                    <div class="social-links">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- End Navbar -->
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-close">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+    </footer>
+    <!-- footer ends -->
 
-                <div class="modal-body p-5">
-                    <div class="text-center mb-5">
-                        <h4 class="modal-title" id="exampleModalLongTitle">Sing Up</h4>
-                        <p class="fs-14">Already have an account? <a href="javascript:void(0)">Log in here</a></p>
-                    </div>
-                    <div class="d-grid gap-3">
-                        <a class="btn btn-outline-dark btn-lg" href="javascript:void(0)">
-                            <span class="d-flex justify-content-center align-items-center">
-                                <img class="avatar avatar-xs me-2" src="{{asset('template')}}/images/google.jpg" alt="Image Description">
-                                Sign up with Google
-                            </span>
-                        </a>
-                        <a class="btn btn-primary btn-lg" href="javascript:void(0)">Sign up with Email</a>
-                        <div class="text-center">
-                            <p class="mb-0 fs-13">By continuing you agree to our <a class="text-primary" href="javascript:void(0)">Terms and Conditions</a></p>
+    <!-- Back to top start -->
+    <div id="back-to-top">
+        <a href="#"></a>
+    </div>
+    <!-- Back to top ends -->
+
+    <!-- search popup -->
+    <div id="search1">
+        <button type="button" class="close">×</button>
+        <form>
+            <input type="search" value="" placeholder="type keyword(s) here" />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+    <!-- login registration modal -->
+    <div class="modal fade log-reg" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="post-tabs">
+                        <!-- tab navs -->
+                        <ul class="nav nav-tabs nav-pills nav-fill" id="postsTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button aria-controls="login" aria-selected="false" class="nav-link active" data-bs-target="#login" data-bs-toggle="tab" id="login-tab" role="tab" type="button">Login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button aria-controls="register" aria-selected="true" class="nav-link" data-bs-target="#register" data-bs-toggle="tab" id="register-tab" role="tab" type="button">Register</button>
+                            </li>
+                        </ul>
+                        <!-- tab contents -->
+                        <div class="tab-content blog-full" id="postsTabContent">
+                            <!-- popular posts -->
+                            <div aria-labelledby="login-tab" class="tab-pane fade active show" id="login" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="blog-image">
+                                            <a href="#" style="background-image: url(images/trending/trending5.jpg);"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4 class="text-center border-b pb-2">Login</h4>
+                                        <div class="log-reg-button d-flex align-items-center justify-content-between">
+                                            <button type="submit" class="btn btn-fb">
+                                                <i class="fab fa-facebook"></i> Login with Facebook
+                                            </button>
+                                            <button type="submit" class="btn btn-google">
+                                                <i class="fab fa-google"></i> Login with Google
+                                            </button>
+                                        </div>
+                                        <hr class="log-reg-hr position-relative my-4 overflow-visible">
+                                        <form method="post" action="#" name="contactform" id="contactform">
+                                            <div class="form-group mb-2">
+                                                <input type="text" name="user_name" class="form-control" id="fname" placeholder="User Name or Email Address">
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <input type="password" name="password_name" class="form-control" id="lpass" placeholder="Password">
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <input type="checkbox" class="custom-control-input" id="exampleCheck">
+                                                <label class="custom-control-label mb-0" for="exampleCheck1">Remember me</label>
+                                                <a class="float-end" href="#">Lost your password?</a>
+                                            </div>
+                                            <div class="comment-btn mb-2 pb-2 text-center border-b">
+                                                <input type="submit" class="nir-btn w-100" id="submit" value="Login">
+                                            </div>
+                                            <p class="text-center">Don't have an account? <a href="#" class="theme">Register</a></p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Recent posts -->
+                            <div aria-labelledby="register-tab" class="tab-pane fade" id="register" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="blog-image">
+                                            <a href="#" style="background-image: url(images/trending/trending5.jpg);"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4 class="text-center border-b pb-2">Register</h4>
+                                        <div class="log-reg-button d-flex align-items-center justify-content-between">
+                                            <button type="submit" class="btn btn-fb">
+                                                <i class="fab fa-facebook"></i> Login with Facebook
+                                            </button>
+                                            <button type="submit" class="btn btn-google">
+                                                <i class="fab fa-google"></i> Login with Google
+                                            </button>
+                                        </div>
+                                        <hr class="log-reg-hr position-relative my-4 overflow-visible">
+                                        <form method="post" action="#" name="contactform1" id="contactform1">
+                                            <div class="form-group mb-2">
+                                                <input type="text" name="user_name" class="form-control" id="fname1" placeholder="User Name">
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <input type="text" name="user_name" class="form-control" id="femail" placeholder="Email Address">
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <input type="password" name="password_name" class="form-control" id="lpass1" placeholder="Password">
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <input type="password" name="password_name" class="form-control" id="lrepass" placeholder="Re-enter Password">
+                                            </div>
+                                            <div class="form-group mb-2 d-flex">
+                                                <input type="checkbox" class="custom-control-input" id="exampleCheck1">
+                                                <label class="custom-control-label mb-0 ms-1 lh-1" for="exampleCheck1">I have read and accept the Terms and Privacy Policy?</label>
+                                            </div>
+                                            <div class="comment-btn mb-2 pb-2 text-center border-b">
+                                                <input type="submit" class="nir-btn w-100" id="submit1" value="Register">
+                                            </div>
+                                            <p class="text-center">Already have an account? <a href="#" class="theme">Login</a></p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer d-block text-center px-5 pb-5">
-                    <p class="footer-text mb-4">Trusted by the world's best teams</p>
-                    <div class="mx-auto">
-                        <div class="row justify-content-between">
-                            <div class="col">
-                                <img class="img-fluid" src="{{asset('template')}}/images/github.svg" alt="Logo">
-                            </div>
-                            <div class="col">
-                                <img class="img-fluid" src="{{asset('template')}}/images/gitlab.svg" alt="Logo">
-                            </div>
-                            <div class="col">
-                                <img class="img-fluid" src="{{asset('template')}}/images/linkedin.svg" alt="Logo">
-                            </div>
-                            <div class="col">
-                                <img class="img-fluid" src="{{asset('template')}}/images/instagram.svg" alt="Logo">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Row -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- End modal -->
 
-    <div class="overflow-hidden-x">
+    <!-- header side menu -->
+    <div class="header_sidemenu">
+        <div class="header_sidemenu_in">
+            <div class="menu py-5 px-4">
+                <div class="close-menu">
+                    <i class="fa fa-times"></i>
+                </div>
+                <div class="m-contentmain">
+                    <div class="m-contentmain">
+                        <div class="m-logo mb-5">
+                            <img src="images/logo.png" alt="m-logo">
+                        </div>
 
-        <!-- Start Home -->
-        @yield('content')
+                        <div class="content-box mb-5">
+                            <h3 class="">Get In Touch</h3>
+                            <p class="mb-2">We must explain to you how all seds this mistakens idea off denouncing pleasures and praising pain was born and I will give you a completed accounts..</p>
+                            <a href="#" class="nir-btn">Consultation</a>
+                        </div>
 
-        <!-- START FOOTER -->
-        <footer class="section footer">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-sm-10 text-center">
-                        <a href="javascript:void(0)"><img src="images/logo-light.png" height="24" alt=""></a>
-                        <p class="mx-auto mt-sm-4">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
-                        <ul class="list-unstyled mb-0 mt-4 social-icon">
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-vimeo"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-google-plus"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-linkedin"></i></a></li>
-                        </ul>
-                    </div><!--end col-->
-                </div><!--end row-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="text-center mt-3">
-                            <ul class="list-unstyled mb-0">
-                                <li class="list-inline-item mx-lg-3 m-2">
-                                    <a class="text-white" href="javascript:void(0)">Home</a>
-                                </li>
-                                <li class="list-inline-item mx-lg-3 m-2">
-                                    <a class="text-white" href="javascript:void(0)">About us</a>
-                                </li>
-                                <li class="list-inline-item mx-lg-3 m-2">
-                                    <a class="text-white" href="javascript:void(0)">Order</a>
-                                </li>
-                                <li class="list-inline-item mx-lg-3 m-2">
-                                    <a class="text-white" href="javascript:void(0)">Member</a>
-                                </li>
-                                <li class="list-inline-item mx-lg-3 m-2">
-                                    <a class="text-white" href="javascript:void(0)">Contact Us</a>
-                                </li>
+                        <div class="contact-info1">
+                            <h3 class="">Contact Info</h3>
+                            <ul>
+                                <li class="d-block mb-1"><i class="fa fa-map-marker-alt me-2"></i> Brozon Mall 26, Newyrok NY 10005</li>
+                                <li class="d-block mb-1"><i class="fa fa-phone-alt me-2"></i>555 626-0234</li>
+                                <li class="d-block mb-1"><i class="fa fa-envelope-open me-2"></i>support@realshield.com</li>
+                                <li class="d-block"><i class="fa fa-clock me-2"></i> Open Time: 09.00 to 18.00</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div><!--end container-->
-        </footer>
-        <!-- END FOOTER -->
-
-
-        <!-- FOOTER-ALT -->
-        <div class="footer-alt pt-3 pb-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-center">
-                            <p class="mb-0 text-white fs-15">©
-                                <script>
-                                    document.write(new Date().getFullYear())
-                                </script> Oxhen. Design by
-                                <i class="mdi mdi-heart text-danger"></i> Themesdesign
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div class="overlay hide"></div>
         </div>
-        <!-- END FOOTER-ALT -->
     </div>
 
-    <!--start back-to-top-->
-    <button onclick="topFunction()" id="back-to-top">
-        <i class="mdi mdi-arrow-up"></i>
-    </button>
-    <!--end back-to-top-->
-
-    <!--Custom js-->
-    <script src="{{asset('template')}}/js/counter.js"></script>
-
-    <!--Bootstrap Js-->
-    <script src="{{asset('template')}}/js/bootstrap.bundle.min.js"></script>
-
-    <!-- animation -->
-    <script src="{{asset('template')}}/js/aos.js"></script>
-
-    <script src="{{asset('template')}}/js/swiper-bundle.min.js"></script>
-
-    <!-- contact -->
-    <script src="{{asset('template')}}/js/contact.js"></script>
-
-    <!-- Team particles-->
-    <script src="{{asset('template')}}/js/particles.min.js"></script>
-
-    <!-- App Js -->
-    <script src="{{asset('template')}}/js/app.js"></script>
+    <!-- *Scripts* -->
+    <script src="{{asset('template2')}}/js/jquery-3.5.1.min.js"></script>
+    <script src="{{asset('template2')}}/js/bootstrap.min.js"></script>
+    <script src="{{asset('template2')}}/js/plugin.js"></script>
+    <script src="{{asset('template2')}}/js/main.js"></script>
+    <script src="{{asset('template2')}}/js/custom-swiper1.js"></script>
+    <script src="{{asset('template2')}}/js/custom-nav.js"></script>
+    <script src="{{asset('template2')}}/js/aos.js"></script>
 
 </body>
 

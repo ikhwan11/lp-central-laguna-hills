@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('landing_page');
+})->middleware('guest');
+
+Route::get('/lp2', function () {
+    return view('landing_page_1');
 });
